@@ -549,6 +549,9 @@ align-items: center;
   flex-direction: column;
   font-weight: 600;
 }
+.domain-img{
+  display: block;
+}
 .david span{
   font-weight: 500;
   color: #616161;
@@ -607,6 +610,7 @@ align-items: center;
 } */
 .trial-side{
 display: flex;
+align-items: center;
 }
 .trial-side button{
   padding: 6px 12px;
