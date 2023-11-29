@@ -1,0 +1,390 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopify Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="https://www.shopify.com"><img class="desktop-only" src="https://crushingit.tech/hackathon-assets/shopify-icon-desktop.svg"></a>
+        <a href="https://www.shopify.com"><img class="mobile-only" src="https://crushingit.tech/hackathon-assets/shopify-icon.svg"></a>
+      </div>
+     
+      <div class="search-box">
+        <input  type="text" class="search-bar" placeholder="search">
+        <div class="search-img">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3226 13.3833C11.3996 14.0841 10.2484 14.5 9 14.5C5.96243 14.5 3.5 12.0376 3.5 9C3.5 5.96243 5.96243 3.5 9 3.5C12.0376 3.5 14.5 5.96243 14.5 9C14.5 10.2484 14.0841 11.3996 13.3833 12.3226L16.2803 15.2197C16.5732 15.5126 16.5732 15.9874 16.2803 16.2803C15.9874 16.5732 15.5126 16.5732 15.2197 16.2803L12.3226 13.3833ZM13 9C13 11.2091 11.2091 13 9 13C6.79086 13 5 11.2091 5 9C5 6.79086 6.79086 5 9 5C11.2091 5 13 6.79086 13 9Z" fill="#B5B5B5"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="profile">
+        
+        <div class="notification">
+          <div id="notification-img" class="notification-img">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.25203 14.4239L4.8061 14.1427C2.95144 13.9295 2.42542 11.4844 4.02838 10.5274L4.0933 10.4886C4.966 9.96761 5.50045 9.02609 5.50045 8.00969V7.5C5.50045 5.01472 7.51517 3 10.0005 3C12.4857 3 14.5005 5.01472 14.5005 7.5V8.00969C14.5005 9.02609 15.0349 9.96761 15.9076 10.4886L15.9725 10.5274C17.5755 11.4844 17.0495 13.9295 15.1948 14.1427L12.652 14.435V14.8C12.652 16.2912 11.4432 17.5 9.95203 17.5C8.46086 17.5 7.25203 16.2912 7.25203 14.8V14.4239ZM11.152 14.5H8.75203V14.8C8.75203 15.4627 9.28929 16 9.95203 16C10.6148 16 11.152 15.4627 11.152 14.8V14.5ZM8.00045 13H12.0005L15.0235 12.6525C15.453 12.6032 15.5748 12.0369 15.2036 11.8153L15.1387 11.7766C15.0591 11.7291 14.9815 11.6793 14.9057 11.6273C14.7506 11.521 14.6036 11.4055 14.4651 11.2818C14.4405 11.2598 14.4162 11.2377 14.3922 11.2152C13.5144 10.395 13.0005 9.23833 13.0005 8.00969V7.5C13.0005 5.84315 11.6573 4.5 10.0005 4.5C8.3436 4.5 7.00045 5.84315 7.00045 7.5V8.00969C7.00045 9.23833 6.48651 10.395 5.60871 11.2152C5.58469 11.2377 5.56039 11.2598 5.53583 11.2818C5.39734 11.4055 5.25029 11.521 5.09523 11.6273C5.01945 11.6793 4.94176 11.7291 4.86222 11.7766L4.79729 11.8153C4.4261 12.0369 4.5479 12.6032 4.97739 12.6525L8.00045 13Z" fill="#E3E3E3"/>
+            </svg>
+          </div>
+          <div class="notification-text" id="notification-text">
+            <div class="notification-dropdown-text">
+            <div>Alerts</div>
+
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M3 6C3 5.58579 3.33579 5.25 3.75 5.25H16.25C16.6642 5.25 17 5.58579 17 6C17 6.41421 16.6642 6.75 16.25 6.75H3.75C3.33579 6.75 3 6.41421 3 6Z" fill="#616161"/>
+                <path d="M6.75 14C6.75 13.5858 7.08579 13.25 7.5 13.25H12.5C12.9142 13.25 13.25 13.5858 13.25 14C13.25 14.4142 12.9142 14.75 12.5 14.75H7.5C7.08579 14.75 6.75 14.4142 6.75 14Z" fill="#616161"/>
+                <path d="M5.5 9.25C5.08579 9.25 4.75 9.58579 4.75 10C4.75 10.4142 5.08579 10.75 5.5 10.75H14.5C14.9142 10.75 15.25 10.4142 15.25 10C15.25 9.58579 14.9142 9.25 14.5 9.25H5.5Z" fill="#616161"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M13.2803 9.03033C13.5732 8.73744 13.5732 8.26256 13.2803 7.96967C12.9874 7.67678 12.5126 7.67678 12.2197 7.96967L9.25 10.9393L8.03033 9.71967C7.73744 9.42678 7.26256 9.42678 6.96967 9.71967C6.67678 10.0126 6.67678 10.4874 6.96967 10.7803L8.71967 12.5303C9.01256 12.8232 9.48744 12.8232 9.78033 12.5303L13.2803 9.03033Z" fill="#616161"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10ZM15.5 10C15.5 13.0376 13.0376 15.5 10 15.5C6.96243 15.5 4.5 13.0376 4.5 10C4.5 6.96243 6.96243 4.5 10 4.5C13.0376 4.5 15.5 6.96243 15.5 10Z" fill="#616161"/>
+              </svg>
+            </div>
+            
+            </div>
+            
+            <div class="notification-alerts">Alerts about your store and account will show here</div>
+          </div>
+        </div>
+        
+  
+        <div class="menu">
+          <div class="menu-page" id="menu-page">
+            <p class="menu-name" id="menu-name">Davii Collections</p>
+            <div class="green">DC</div>
+          </div>
+          
+          <div id="menu-text" class="menu-text">
+         
+            <a href="https://admin.shopify.com">
+              <div class="menu-dropdown-text">
+                <div class="menu-dc">
+                  <div class="green-dropdown">DC</div>
+                  <div class="dropdownmenu-text">Davii Collections</div>
+                </div>
+  
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M13.3332 4L5.99984 11.3333L2.6665 8" stroke="#303030" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://admin.shopify.com">
+              <div class="stores">
+              <div>All Stores</div>
+              <img src="https://crushingit.tech/hackathon-assets/icon-store.svg"/>
+            </div></a>
+
+            <div class="second-dropdown">
+              <a href="https://admin.shopify.com"><p>Help Center</p></a>
+              <a href="https://admin.shopify.com"><p>Changelog</p></a>
+              <a href="https://admin.shopify.com"> <p>Community forum</p></a>
+              <a href="https://admin.shopify.com"><p>Hire a Shopify Partner</p></a>
+              <a href="https://admin.shopify.com"><p>Keyboard shortcuts</p></a>
+            </div>
+            
+            <div class="third-dropdown">
+              <a href="https://admin.shopify.com"> <p class="david">David Micheal
+                <span>davidmicheal@gmail.com</span>
+              </p></a>
+              <a href="https://admin.shopify.com"> <p>Manage account</p></a>
+              <a href="https://admin.shopify.com"><p>Log out</p></a> 
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+    </header>
+
+    <section>
+      <div class="trial">
+        <div class="trial-container">
+          <div class="trial-text">
+            <p>Extend your trial for $1/month for 3 months on select plans</p>
+          </div>
+          
+          <div class="trial-side">
+            <a href="https://www.shopify.com/pricing"><button type="button">Select a plan</button></a>
+            
+            <div class="trial-img" onclick="closeTrial()">
+              <svg width="25" height="40" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.4697 15.0303C14.7626 15.3232 15.2374 15.3232 15.5303 15.0303C15.8232 14.7374 15.8232 14.2626 15.5303 13.9697L11.5607 10L15.5303 6.03033C15.8232 5.73744 15.8232 5.26256 15.5303 4.96967C15.2374 4.67678 14.7626 4.67678 14.4697 4.96967L10.5 8.93934L6.53033 4.96967C6.23744 4.67678 5.76256 4.67678 5.46967 4.96967C5.17678 5.26256 5.17678 5.73744 5.46967 6.03033L9.43934 10L5.46967 13.9697C5.17678 14.2626 5.17678 14.7374 5.46967 15.0303C5.76256 15.3232 6.23744 15.3232 6.53033 15.0303L10.5 11.0607L14.4697 15.0303Z" fill="#fff"/>
+                </svg>
+                
+            </div>
+          </div>
+     
+         
+        </div>
+      </div>
+    
+   <div class="main-box">
+
+    <div class="main-page">
+
+      <div class="page-guide">
+        <div class="setup-sec">
+          <h3>Setup guide</h3>
+          <p class="page-text">Use this personalized guide to get your store up and running.</p>
+          <div class="progress-text">
+            <div class="completion-status">
+              <p class="main-number">0/5 completed</p>
+          </div>
+            <div class="progress-bar">
+              <div class="progress-bar-inner"  id="progress-bar"></div>
+            </div>
+          </div>
+        
+        </div>
+
+        <div class="toggle-page-img">
+          <img onclick="openDiv()" class="img-up" src="https://crushingit.tech/hackathon-assets/icon-arrow-up.svg">
+          <img onClick="closeDiv()" class="img-down" src="https://crushingit.tech/hackathon-assets/icon-arrow-down.svg">
+        </div>
+      </div>
+
+      <div class="main-text">
+        <div class="domain">
+            <div class="check">
+              <button  type="button"  class="check-btn" id="check-btn" aria-label="mark check">
+                <svg id="not-completed" class="not-completed" aria-hidden="true"  xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 32 32" fill="none">
+                  <circle cx="16" cy="16" r="12" stroke="#b5b5b5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6" />
+                </svg>
+
+                <svg id="completed" aria-hidden="true" class="hidden completed" width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+                  <path
+                    d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+                    fill="#fff"
+                  ></path>
+                </svg>
+
+                <svg id="loading"  aria-hidden="true"  class="loading hidden" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 28 28" fill="none">
+                  <path
+                    d="M26 14C26 16.3734 25.2962 18.6935 23.9776 20.6668C22.6591 22.6402 20.7849 24.1783 18.5922 25.0866C16.3995 25.9948 13.9867 26.2324 11.6589 25.7694C9.33114 25.3064 7.19295 24.1635 5.51472 22.4853C3.83649 20.8071 2.6936 18.6689 2.23058 16.3411C1.76755 14.0133 2.00519 11.6005 2.91345 9.4078C3.8217 7.21509 5.35977 5.34094 7.33316 4.02236C9.30655 2.70379 11.6266 2 14 2"
+                    stroke="#1a1a1a"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <p class="check-text">Customize your online store</p>
+            </div>
+
+            <div class="domain-items" id="domain-items">
+              <div>
+                <p>Choose a theme and add your logo, colors, and images to reflect your brand.<a href="">Learn more</a></p>
+                <button type="button" class="btn">Customize theme</button>
+            </div>
+
+            
+            <div class="domain-img">
+              <img src="https://crushingit.tech/hackathon-assets/customise-store.png" alt="customise store img">
+            </div>
+
+            </div>
+            
+          </div>   
+
+          <div class="domain">
+            <div class="check">
+              <button  type="button"  class="check-btn" id="check-btn" aria-label="mark check">
+                <svg id="not-completed" class="not-completed" aria-hidden="true"  xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 32 32" fill="none">
+                  <circle cx="16" cy="16" r="12" stroke="#b5b5b5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6" />
+                </svg>
+
+                <svg id="completed" aria-hidden="true" class="hidden completed" width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+                  <path
+                    d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+                    fill="#fff"
+                  ></path>
+                </svg>
+
+                <svg id="loading"  aria-hidden="true"  class="loading hidden" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 28 28" fill="none">
+                  <path
+                    d="M26 14C26 16.3734 25.2962 18.6935 23.9776 20.6668C22.6591 22.6402 20.7849 24.1783 18.5922 25.0866C16.3995 25.9948 13.9867 26.2324 11.6589 25.7694C9.33114 25.3064 7.19295 24.1635 5.51472 22.4853C3.83649 20.8071 2.6936 18.6689 2.23058 16.3411C1.76755 14.0133 2.00519 11.6005 2.91345 9.4078C3.8217 7.21509 5.35977 5.34094 7.33316 4.02236C9.30655 2.70379 11.6266 2 14 2"
+                    stroke="#1a1a1a"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <p class="check-text">Add your first product</p>
+            </div>
+
+            <div class="domain-items hidden" id="domain-items">
+              <div>
+                <p>Write a description, add photos, and set pricing for the 
+                  products you plan to sell. <a href="">Learn more</a></p>
+                <div class="domain-buttons">
+                  <button type="button" class="btn">Add product</button>
+                  <button type="button" class="import-btn">Import product</button>
+                </div>
+               
+            </div>
+
+            
+            <div class="domain-img">
+              <img src="https://crushingit.tech/hackathon-assets/product.png" alt="product img">
+            </div>
+
+            </div>
+            
+          </div>   
+
+          <div class="domain">
+            <div class="check">
+              <button  type="button"  class="check-btn" id="check-btn" aria-label="mark check">
+                <svg id="not-completed" class="not-completed" aria-hidden="true"  xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 32 32" fill="none">
+                  <circle cx="16" cy="16" r="12" stroke="#b5b5b5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6" />
+                </svg>
+
+                <svg id="completed" aria-hidden="true" class="hidden completed" width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+                  <path
+                    d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+                    fill="#fff"
+                  ></path>
+                </svg>
+
+                <svg id="loading"  aria-hidden="true"  class="loading hidden" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 28 28" fill="none">
+                  <path
+                    d="M26 14C26 16.3734 25.2962 18.6935 23.9776 20.6668C22.6591 22.6402 20.7849 24.1783 18.5922 25.0866C16.3995 25.9948 13.9867 26.2324 11.6589 25.7694C9.33114 25.3064 7.19295 24.1635 5.51472 22.4853C3.83649 20.8071 2.6936 18.6689 2.23058 16.3411C1.76755 14.0133 2.00519 11.6005 2.91345 9.4078C3.8217 7.21509 5.35977 5.34094 7.33316 4.02236C9.30655 2.70379 11.6266 2 14 2"
+                    stroke="#1a1a1a"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <p class="check-text">Add custom domain</p>
+            </div>
+
+            <div class="domain-items hidden" id="domain-items">
+              <div>
+                <p>Your current domain is 222219.myshopify.com but you can add a 
+                  custom domain to help customers find your online store.<a href="">Learn more</a></p>
+                <button type="button"class="btn">Add domain</button>
+            </div>
+
+            
+            <div class="domain-img">
+              <img src="https://crushingit.tech/hackathon-assets/website.png" alt="website img">
+            </div>
+
+            </div>
+            
+          </div>   
+
+          <div class="domain">
+            <div class="check">
+              <button type="button" class="check-btn" id="check-btn" aria-label="mark check">
+                <svg id="not-completed" class="not-completed" aria-hidden="true"  xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 32 32" fill="none">
+                  <circle cx="16" cy="16" r="12" stroke="#b5b5b5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6" />
+                </svg>
+
+                <svg id="completed" aria-hidden="true" class="hidden completed" width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+                  <path
+                    d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+                    fill="#fff"
+                  ></path>
+                </svg>
+
+                <svg id="loading"  aria-hidden="true"  class="loading hidden" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 28 28" fill="none">
+                  <path
+                    d="M26 14C26 16.3734 25.2962 18.6935 23.9776 20.6668C22.6591 22.6402 20.7849 24.1783 18.5922 25.0866C16.3995 25.9948 13.9867 26.2324 11.6589 25.7694C9.33114 25.3064 7.19295 24.1635 5.51472 22.4853C3.83649 20.8071 2.6936 18.6689 2.23058 16.3411C1.76755 14.0133 2.00519 11.6005 2.91345 9.4078C3.8217 7.21509 5.35977 5.34094 7.33316 4.02236C9.30655 2.70379 11.6266 2 14 2"
+                    stroke="#1a1a1a"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <p class="check-text">Name your Store</p>
+            </div>
+
+            <div class="domain-items hidden" id="domain-items">
+              <div>
+                <p>Your temporary store name is currently Davii collections. The store name 
+                  appears in your admin and your online store.<a href="">Learn more</a></p>
+                <button type="button" class="btn">Name store</button>
+            </div>
+
+            
+            <div class="domain-img">
+              <img src="https://crushingit.tech/hackathon-assets/name-store.png" alt="name stotre img">
+            </div>
+
+            </div>
+            
+          </div>   
+
+          <div class="domain">
+            <div class="check">
+              <button  type="button"  class="check-btn" id="check-btn" aria-label="mark check">
+                <svg id="not-completed" class="not-completed" aria-hidden="true"  xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 32 32" fill="none">
+                  <circle cx="16" cy="16" r="12" stroke="#b5b5b5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6" />
+                </svg>
+
+                <svg id="completed" aria-hidden="true" class="hidden completed" width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+                  <path
+                    d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+                    fill="#fff"
+                  ></path>
+                </svg>
+
+                <svg id="loading"  aria-hidden="true"  class="loading hidden" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 28 28" fill="none">
+                  <path
+                    d="M26 14C26 16.3734 25.2962 18.6935 23.9776 20.6668C22.6591 22.6402 20.7849 24.1783 18.5922 25.0866C16.3995 25.9948 13.9867 26.2324 11.6589 25.7694C9.33114 25.3064 7.19295 24.1635 5.51472 22.4853C3.83649 20.8071 2.6936 18.6689 2.23058 16.3411C1.76755 14.0133 2.00519 11.6005 2.91345 9.4078C3.8217 7.21509 5.35977 5.34094 7.33316 4.02236C9.30655 2.70379 11.6266 2 14 2"
+                    stroke="#1a1a1a"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <p class="check-text">Setup a payment provider</p>
+            </div>
+
+            <div class="domain-items hidden" id="domain-items">
+              <div>
+                <p>Choose a payment provider to start accepting payments. You’ll need to create an account with the payment 
+                  provider and set it up with your Shopify store. <a href="">Learn more</a></p>
+                  <button type="button" class="btn">Setup payment</button>
+            </div>
+
+            
+            <div class="domain-img">
+              <img src="https://crushingit.tech/hackathon-assets/payment.png" alt="payment img">
+            </div>
+
+            </div>
+            
+          </div>   
+
+        </div>
+            
+          </div>    
+        </div>
+      </div>
+
+
+    <script src="./index.js"></script>
+  </body>
+</html>
