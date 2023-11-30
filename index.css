@@ -622,6 +622,7 @@ align-items: center;
   font-weight: 500;
   margin-right: 10px;
   text-decoration: none;
+  color: #1a1a1a;
 }
 
 .page-guide{
@@ -635,6 +636,8 @@ font-family: Inter;
 .main-box{
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
+  
 }
 .main-page{
   display: flex;
@@ -644,6 +647,7 @@ font-family: Inter;
   border-radius: 8px;
   border: 1px solid #b5b5b5; 
   padding: 12px 8px 12px 16px;
+  
 }
 .progress-text{
 display: flex;
@@ -697,6 +701,7 @@ transition: width 0.3s ease;
  .import-btn{
   border: none;
   font-weight: 600;
+  color: #1a1a1a;
  }
 .btn{
   padding: 8px;
@@ -761,10 +766,6 @@ box-shadow: 0px 0px 0px 1.5px #333, 0px 1px 0px 1.5px #333, 0px 2px 0px 0px #000
   .menu-name{
     display: none;
   }
-  .trial{
-    display: flex;
-    justify-content: flex-start;
-  }
   .trial-container{
     display: flex;
     flex-direction: column;
@@ -772,7 +773,7 @@ box-shadow: 0px 0px 0px 1.5px #333, 0px 1px 0px 1.5px #333, 0px 2px 0px 0px #000
     width: 100%;
     border-radius: 0px;
     padding: 12px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   .trial-side{
     display: flex;
@@ -781,21 +782,33 @@ box-shadow: 0px 0px 0px 1.5px #333, 0px 1px 0px 1.5px #333, 0px 2px 0px 0px #000
   .main-box{
     display: flex;
     justify-content: flex-start;
+    
   }
   .main-page{
     width: 100%;
     border-radius: 0px;
+    font-size: 13px;
+  }
+  .page-guide{
+    font-size: 14px;
+    margin-bottom: 25px;
   }
   .check-text{
     font-size: 15px;
   }
+  .domain{
+    padding-bottom: 25px;
+  }
   .domain-items p{
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1.7;
+  }
+  .main-text p{
+    font-size: 13.5px;
   }
   .domain-items button{
     padding: 6px;
-    font-size: 14px;
+    font-size: 13px;
   }
   .domain-img{
     display: none;
